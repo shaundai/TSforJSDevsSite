@@ -1,10 +1,25 @@
+import React from 'react'
+import styled from 'styled-components'
+
+const Container = styled.div`
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+`
+
+const Header = styled.div`
+color: white;
+`
 
 const App = () => {
   return (
-    <div>
-TypeScript for JavaScript Developers
-    </div>
-  );
+    <Container>
+        <Header>TypeScript for JavaScript Developers</Header>
+    </Container>
+  )
 }
 
 export default App;
