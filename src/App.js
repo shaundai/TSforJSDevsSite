@@ -14,10 +14,15 @@ const Header = styled.div`
 color: white;
 `
 
+const Footer = styled.div`
+color: white;
+`
+
 const App = () => {
   return (
     <Container>
         <Header>TypeScript for JavaScript Developers</Header>
+        <Footer>made with love by Shaundai Person</Footer>
     </Container>
   )
 }
