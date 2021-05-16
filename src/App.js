@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
+import Shaundai from './images/shaundaipic.png'
 import { Colors } from "./util/Colors"
 import { Emoji } from "./util/Emoji"
 import { Footer } from "./components/Footer"
@@ -44,6 +45,11 @@ const HeaderText = styled.span`
 	-moz-text-fill-color: transparent;
 `
 
+const InstructorPic = styled.img`
+height: 4em;
+border-radius: 50%;
+`
+
 const App = () => {
 	return (
 		<Container>
@@ -55,7 +61,7 @@ const App = () => {
 				</HeaderText>
 
 				<div>
-					taught by{" "}
+					<InstructorPic src={Shaundai} alt="some pretty chick"></InstructorPic>taught by{" "}
 					<a href="https://www.twitter.com/shaundai">Shaundai Person</a>
 				</div>
 			</Header>
