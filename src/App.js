@@ -16,12 +16,32 @@ const Container = styled.div`
 
 const Header = styled.div`
 color: ${Colors.mainWhite};
+font-size: 2em;
+`
+
+const JavaScriptText = styled.span`
+margin-right: 1em;
+margin-left: 1em;
+background-color: ${Colors.mainPurpleBright};
+background-image: linear-gradient(45deg, ${Colors.mainPurpleBright}, ${Colors.softOrange});
+background-size: 100%;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; 
+-moz-background-clip: text;
+-moz-text-fill-color: transparent;
 `
 
 const App = () => {
   return (
     <Container>
-        <Header>TypeScript for JavaScript Developers</Header>
+        <Header>
+          <JavaScriptText>TypeScript</JavaScriptText>
+          <em>for</em>
+          
+          <JavaScriptText>JavaScript</JavaScriptText>
+           <JavaScriptText>Developers</JavaScriptText>
+           </Header>
         <Footer />
     </Container>
   )
