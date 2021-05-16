@@ -2,10 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { Colors } from './util/Colors'
-import { Emoji } from './util/Emoji'
+import { Footer } from './components/Footer'
 
 const Container = styled.div`
-    background-color: black;
+    background-color: ${Colors.mainBlack};
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,10 +15,6 @@ const Container = styled.div`
 `
 
 const Header = styled.div`
-color: white;
-`
-
-const Footer = styled.div`
 color: ${Colors.mainWhite};
 `
 
@@ -26,7 +22,7 @@ const App = () => {
   return (
     <Container>
         <Header>TypeScript for JavaScript Developers</Header>
-        <Footer>made with <Emoji symbol="💖" label="sparking heart"/> by Shaundai Person</Footer>
+        <Footer />
     </Container>
   )
 }
