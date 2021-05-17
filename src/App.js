@@ -15,12 +15,12 @@ const Container = styled.div`
 	align-items: center;
 	height: 100vh;
 	width: 100%;
+  color: ${Colors.mainWhite};
 `
 
 const Header = styled.div`
 	display: flex;
 	flex-direction: column;
-	color: ${Colors.mainWhite};
 `
 
 const Title = styled.div``
@@ -50,6 +50,12 @@ height: 4em;
 border-radius: 50%;
 `
 
+const InstructorSection = styled.div`
+height: 4em;
+display: flex;
+align-items: center;
+`
+
 const App = () => {
 	return (
 		<Container>
@@ -60,10 +66,7 @@ const App = () => {
 					<Emoji symbol="✨" label="sparkles" />.
 				</HeaderText>
 
-				<div>
-					<InstructorPic src={Shaundai} alt="some pretty chick"></InstructorPic>taught by{" "}
-					<a href="https://www.twitter.com/shaundai">Shaundai Person</a>
-				</div>
+
 			</Header>
 			<Title>
 				<HeaderText>TypeScript</HeaderText>
@@ -71,8 +74,13 @@ const App = () => {
 
 				<HeaderText>JavaScript</HeaderText>
 				<HeaderText>Developers</HeaderText>
+        <InstructorSection>
+					<InstructorPic src={Shaundai} alt="some pretty chick"></InstructorPic>taught by{" "}
+					<a href="https://www.twitter.com/shaundai">Shaundai Person</a>
+				</InstructorSection>
 				<SubscribeForm />
 			</Title>
+
 			<Footer />
 		</Container>
 	)
