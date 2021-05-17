@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import Shaundai from './images/shaundaipic.png'
+import Shaundai from "./images/shaundaipic.png"
 import { Colors } from "./util/Colors"
 import { Emoji } from "./util/Emoji"
 import { Footer } from "./components/Footer"
@@ -10,12 +10,19 @@ import { SubscribeForm } from "./components/SubscribeForm"
 const Container = styled.div`
 	background-color: ${Colors.mainBlack};
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
 	width: 100%;
-  color: ${Colors.mainWhite};
+	color: ${Colors.mainWhite};
+`
+const Content = styled.div`
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 90%;
 `
 
 const Header = styled.div`
@@ -25,10 +32,17 @@ const Header = styled.div`
 
 const Title = styled.div``
 
+const For = styled.em`
+	font-family: "Seaweed Script";
+	font-size: 4.4vw;
+	color: ${Colors.coolBlue};
+`
+
 const HeaderText = styled.span`
-	font-family: "Montserrat", sans-serif;
+	width: 100%;
+  font-family: "Montserrat", sans-serif;
 	font-weight: bold;
-	font-size: 4em;
+	font-size: 5vw;
 	margin-right: 5px;
 	margin-left: 10px;
 	background-color: ${Colors.mainPurpleBright};
@@ -46,42 +60,48 @@ const HeaderText = styled.span`
 `
 
 const InstructorPic = styled.img`
-height: 4em;
-border-radius: 50%;
+	height: 4em;
+	border-radius: 50%;
 `
 
 const InstructorSection = styled.div`
-height: 4em;
-display: flex;
-align-items: center;
+	height: 4em;
+	display: flex;
+	align-items: center;
 `
 
 const App = () => {
 	return (
 		<Container>
+      <Content>
 			<Header>
 				<HeaderText>
 					Type errors are <Emoji symbol="✨" label="sparkles" />
 					annoying
 					<Emoji symbol="✨" label="sparkles" />.
 				</HeaderText>
-
-
+				<div>
+					When you’re used to the carefree life of declaring variables without
+					having to worry about their future, what they’ll eventually become,
+					and the functions they’ll have to interact with, adding types to your
+					code just seems like a bunch of extra work for little reward.
+				</div>
 			</Header>
 			<Title>
 				<HeaderText>TypeScript</HeaderText>
-				<em>for</em>
+				<For>for</For>
 
-				<HeaderText>JavaScript</HeaderText>
-				<HeaderText>Developers</HeaderText>
-        <InstructorSection>
-					<InstructorPic src={Shaundai} alt="some pretty chick"></InstructorPic>taught by{" "}
+				<HeaderText>JavaScript Developers</HeaderText>
+				<InstructorSection>
+					<InstructorPic src={Shaundai} alt="some pretty chick"></InstructorPic>
+					taught by{" "}
 					<a href="https://www.twitter.com/shaundai">Shaundai Person</a>
 				</InstructorSection>
 				<SubscribeForm />
 			</Title>
 
 			<Footer />
+      </Content>
 		</Container>
 	)
 }
