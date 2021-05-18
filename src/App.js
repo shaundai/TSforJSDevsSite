@@ -5,8 +5,9 @@ import Shaundai from "./images/shaundaipic.png"
 import { Colors } from "./util/Colors"
 import { Footer } from "./components/Footer"
 import { SubscribeForm } from "./components/SubscribeForm"
-import { Header } from './components/Header'
-import { HeaderText } from './components/styles'
+import { Header } from "./components/Header"
+import { HeaderText } from "./components/styles"
+import { device } from './util/util'
 
 const Container = styled.div`
 	background-color: ${Colors.mainBlack};
@@ -14,7 +15,7 @@ const Container = styled.div`
 	justify-content: center;
 	width: 100%;
 	color: ${Colors.mainWhite};
-  font-family: "Montserrat", sans-serif;
+	font-family: "Montserrat", sans-serif;
 `
 const Content = styled.div`
 	display: flex;
@@ -24,12 +25,28 @@ const Content = styled.div`
 	width: 90%;
 `
 
-const Title = styled.div``
+const Title = styled.div`
+	display: flex;
+  flex-direction: column;
+	width: 100%;
+`
+
+const Line = styled.div`
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+`
 
 const For = styled.em`
 	font-family: "Seaweed Script";
-	font-size: 4.4vw;
+	font-size: 4.5vw;
 	color: ${Colors.coolBlue};
+  margin: 0px 15px;
+  @media ${device.tablet} {
+		font-size: 2.3em;
+    margin: 0px 8px;
+	}
 `
 
 const InstructorPic = styled.img`
@@ -46,23 +63,27 @@ const InstructorSection = styled.div`
 const App = () => {
 	return (
 		<Container>
-      <Content>
-			<Header />
-			<Title>
-				<HeaderText>TypeScript</HeaderText>
-				<For>for</For>
-
-				<HeaderText>JavaScript Developers</HeaderText>
+			<Content>
+				<Header />
+				<Title>
+					<Line>
+						<HeaderText>TypeScript</HeaderText>
+						<For>for</For>
+						<HeaderText>JavaScript</HeaderText>
+					</Line>
+					<Line>
+						<HeaderText>Developers</HeaderText>
+					</Line>
+				</Title>
 				<InstructorSection>
 					<InstructorPic src={Shaundai} alt="some pretty chick"></InstructorPic>
 					taught by{" "}
 					<a href="https://www.twitter.com/shaundai">Shaundai Person</a>
 				</InstructorSection>
 				<SubscribeForm />
-			</Title>
 
-			<Footer />
-      </Content>
+				<Footer />
+			</Content>
 		</Container>
 	)
 }

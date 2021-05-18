@@ -4,12 +4,9 @@ import { Colors } from "../util/Colors"
 import { device } from '../util/util'
 
 export const HeaderText = styled.span`
-width: 100%;
 font-family: "Montserrat", sans-serif;
 font-weight: bold;
 font-size: 5vw;
-margin-right: 5px;
-margin-left: 10px;
 background-color: ${Colors.mainPurpleBright};
 background-image: linear-gradient(
   45deg,
