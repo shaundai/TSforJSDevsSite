@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 import { Colors } from '../util/Colors'
-import { Emoji } from '../util/Emoji'
+import { Emoji } from '../util/util'
 
 const FooterContainer = styled.div`
   position: fixed;
