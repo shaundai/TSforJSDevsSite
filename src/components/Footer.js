@@ -4,7 +4,7 @@ import { Colors } from '../util/Colors'
 import { Emoji } from '../util/util'
 
 const FooterContainer = styled.div`
-  position: fixed;
+  margin-top: 24px;
   height: 8vh;
   bottom: 0px;
   color: ${Colors.mainWhite};

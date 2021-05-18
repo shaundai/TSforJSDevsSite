@@ -29,6 +29,7 @@ const Title = styled.div`
 	display: flex;
   flex-direction: column;
 	width: 100%;
+  height: 75vh;
 `
 
 const Line = styled.div`
@@ -55,9 +56,23 @@ const InstructorPic = styled.img`
 `
 
 const InstructorSection = styled.div`
-	height: 4em;
+	height: 24vh;
 	display: flex;
+  justify-content: center;
 	align-items: center;
+  margin: 6vh 0 16vh;
+`
+
+const TaughtBy = styled.div`
+margin: 0px 10px;
+font-weight: 600;
+font-size: 20px;
+`
+
+const SignUp = styled.div`
+color: ${Colors.mainPurpleBright};
+width: 100%;
+text-align: center;
 `
 
 const App = () => {
@@ -74,14 +89,17 @@ const App = () => {
 					<Line>
 						<HeaderText>Developers</HeaderText>
 					</Line>
-				</Title>
+          <SignUp>*coming Summer 2021*</SignUp>
+
+
 				<InstructorSection>
 					<InstructorPic src={Shaundai} alt="some pretty chick"></InstructorPic>
-					taught by{" "}
-					<a href="https://www.twitter.com/shaundai">Shaundai Person</a>
+					<TaughtBy>taught by{" "}
+					<a href="https://www.twitter.com/shaundai">Shaundai Person</a></TaughtBy>
 				</InstructorSection>
+        </Title>
+        <SignUp>sign up for updates (no spam, I pinky promise.)</SignUp>
 				<SubscribeForm />
-
 				<Footer />
 			</Content>
 		</Container>

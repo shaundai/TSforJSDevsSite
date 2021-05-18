@@ -31,7 +31,7 @@ export const SubscribeForm = () => {
 					<div data-element="fields" data-stacked="false">
 						<div>
 							<Form.Row>
-								<Form.Group as={Col} md={3}>
+								<Form.Group as={Col} md={4}>
 									<Form.Control
 										aria-label="First Name"
 										name="fields[first_name]"
@@ -40,7 +40,7 @@ export const SubscribeForm = () => {
 										type="text"
 									/>
 								</Form.Group>
-								<Form.Group as={Col} md={4}>
+								<Form.Group as={Col} md={5}>
 									<Form.Control
 										name="email_address"
 										aria-label="Email Address"
@@ -49,7 +49,7 @@ export const SubscribeForm = () => {
 										type="email"
 									/>
 								</Form.Group>
-								<Form.Group as={Col} md={1}>
+								<Form.Group as={Col} md={2}>
 									<Button data-element="submit" type="submit" variant="primary">
 										Subscribe
 									</Button>
