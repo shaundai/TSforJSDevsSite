@@ -60,13 +60,13 @@ const InstructorSection = styled.div`
 	display: flex;
   justify-content: center;
 	align-items: center;
-  margin: 6vh 0 16vh;
+  margin: 0 0 16vh;
 `
 
 const TaughtBy = styled.div`
 margin: 0px 10px;
-font-weight: 600;
-font-size: 20px;
+font-weight: 500;
+font-size: 22px;
 `
 
 const SignUp = styled.div`
@@ -90,7 +90,6 @@ const App = () => {
 						<HeaderText>Developers</HeaderText>
 					</Line>
           <SignUp>*coming Summer 2021*</SignUp>
-
 
 				<InstructorSection>
 					<InstructorPic src={Shaundai} alt="some pretty chick"></InstructorPic>
