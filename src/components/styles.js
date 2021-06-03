@@ -23,7 +23,7 @@ background-clip: text;
 		font-size: 2.3em;
 	}
 @media ${device.mobile} {
-		font-size: 1.3em;
+		font-size: 2.3em;
 	}
 `
 
@@ -75,23 +75,35 @@ export const For = styled.em`
 	}
 `
 
-export const InstructorPic = styled.img`
-	height: 4em;
-	border-radius: 50%;
-`
-
 export const InstructorSection = styled.div`
 	height: 24vh;
 	display: flex;
+  width: 100%;
   justify-content: center;
 	align-items: center;
   margin: 0 0 16vh;
 `
 
+export const InstructorPic = styled.img`
+	height: 4em;
+	border-radius: 50%;
+`
+
 export const TaughtBy = styled.div`
-margin: 0px 10px;
+margin: 0px 0 0 20px;
 font-weight: 500;
 font-size: 22px;
+@media ${device.tablet} {
+		font-size: 20px;
+	}
+@media ${device.mobile} {
+		font-size: 16px;
+	}
+`
+
+export const ShaundaiNameLink = styled.a`
+font-weight: bold;
+display: block;
 `
 
 export const SignUp = styled.div`

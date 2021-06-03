@@ -4,7 +4,7 @@ import Shaundai from "./images/shaundaipic.png"
 import { Footer } from "./components/Footer"
 import { SubscribeForm } from "./components/SubscribeForm"
 import { Header } from "./components/Header"
-import { HeaderText, Container, Content, Title, Line, For, SignUp, InstructorPic, InstructorSection, TaughtBy } from "./components/styles"
+import { HeaderText, Container, Content, Title, Line, For, SignUp, InstructorPic, InstructorSection, TaughtBy, ShaundaiNameLink } from "./components/styles"
 
 const App = () => {
 	return (
@@ -24,8 +24,9 @@ const App = () => {
 
 				<InstructorSection>
 					<InstructorPic src={Shaundai} alt="some pretty chick"></InstructorPic>
-					<TaughtBy>taught by{" "}
-					<a href="https://www.twitter.com/shaundai">Shaundai Person</a></TaughtBy>
+					<TaughtBy>Course Instructor:{" "}
+					<ShaundaiNameLink href="https://www.twitter.com/shaundai">Shaundai Person</ShaundaiNameLink>
+						</TaughtBy>
 				</InstructorSection>
         </Title>
         <SignUp>sign up for updates (no spam, I pinky promise.)</SignUp>
