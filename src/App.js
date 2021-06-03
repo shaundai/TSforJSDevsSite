@@ -23,7 +23,7 @@ const App = () => {
           <SignUp>*coming Summer 2021*</SignUp>
 
 				<InstructorSection>
-					<InstructorPic src={Shaundai} alt="some pretty chick"></InstructorPic>
+				<a href="https://www.twitter.com/shaundai"><InstructorPic src={Shaundai} alt="some pretty chick"/></a>
 					<TaughtBy>Course Instructor:{" "}
 					<ShaundaiNameLink href="https://www.twitter.com/shaundai">Shaundai Person</ShaundaiNameLink>
 						</TaughtBy>

@@ -92,18 +92,13 @@ export const InstructorPic = styled.img`
 export const TaughtBy = styled.div`
 margin: 0px 0 0 20px;
 font-weight: 500;
-font-size: 22px;
-@media ${device.tablet} {
-		font-size: 20px;
-	}
-@media ${device.mobile} {
-		font-size: 16px;
-	}
+font-size: 18px;
 `
 
 export const ShaundaiNameLink = styled.a`
 font-weight: bold;
 display: block;
+font-size: 20px;
 `
 
 export const SignUp = styled.div`
