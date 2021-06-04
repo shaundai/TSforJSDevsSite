@@ -99,6 +99,31 @@ export const ShaundaiNameLink = styled.a`
 font-weight: bold;
 display: block;
 font-size: 20px;
+position: relative;
+
+&:hover {
+  text-decoration: none;
+  color: ${Colors.mainWhite};
+}
+
+&:after { 
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  background: none repeat scroll 0 0 transparent;
+  height: 2px;
+  width: 0;
+  background: ${Colors.softOrange};
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+&:hover::after { 
+  width: 100%; 
+  left: 0; 
+}
+
 `
 
 export const SignUp = styled.div`
