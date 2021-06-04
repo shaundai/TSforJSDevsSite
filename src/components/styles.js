@@ -46,8 +46,10 @@ export const Content = styled.div`
 export const Title = styled.div`
 	display: flex;
   flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	width: 100vw;
-  height: 75vh;
+  height: 100vh;
 `
 
 export const Line = styled.div`
@@ -75,7 +77,7 @@ export const For = styled.em`
 	}
 `
 
-export const InstructorSection = styled.div`
+export const InstructorContainer = styled.div`
 	height: 24vh;
 	display: flex;
   width: 100%;
@@ -123,7 +125,6 @@ position: relative;
   width: 100%; 
   left: 0; 
 }
-
 `
 
 export const SignUp = styled.div`
