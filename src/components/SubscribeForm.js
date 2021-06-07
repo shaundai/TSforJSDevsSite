@@ -16,7 +16,7 @@ const OuterFormContainer = styled.div`
 export const SubscribeForm = () => {
 	return (
 		<OuterFormContainer>
-			<SignUp>sign up for updates (no spam, I pinky promise.)</SignUp>
+			<div><SignUp>sign up for updates</SignUp><SignUp> (no spam, I pinky promise.)</SignUp></div>
 
 			<Container>
 				<script src="https://f.convertkit.com/ckjs/ck.5.js" />

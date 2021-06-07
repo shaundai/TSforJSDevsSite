@@ -131,4 +131,8 @@ export const SignUp = styled.div`
 color: ${Colors.mainPurpleBright};
 width: 100%;
 text-align: center;
+display: inline;
+@media ${device.mobile} {
+  display: block;
+	}
 `
