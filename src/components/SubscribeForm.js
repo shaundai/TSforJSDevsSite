@@ -1,6 +1,9 @@
 import styled from "styled-components"
 import { SignUp } from "./styles"
 
+import { device } from '../util/util'
+
+
 import Form from "react-bootstrap/Form"
 import Button from "react-bootstrap/Button"
 import Container from "react-bootstrap/Container"
@@ -11,12 +14,15 @@ const OuterFormContainer = styled.div`
 	flex-direction: column;
 	justify-content: center;
   align-items: center;
+  @media ${device.mobile} {
+  width: 90%;
+	}
 `
 
 export const SubscribeForm = () => {
 	return (
 		<OuterFormContainer>
-			<div><SignUp>sign up for updates</SignUp><SignUp> (no spam, I pinky promise.)</SignUp></div>
+        <SignUp>sign up for updates (no spam. pinky promise.)</SignUp>
 
 			<Container>
 				<script src="https://f.convertkit.com/ckjs/ck.5.js" />
