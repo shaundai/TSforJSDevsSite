@@ -16,15 +16,16 @@ const HeaderContainer = styled.div`
 const CourseDescription = styled.div`
 	font-size: 2.2vw;
   font-weight: 600;
-	width: 90%;
+	width: 87%;
   margin-top: 29px;
   @media ${device.tablet} {
 		font-size: 16px;
     margin-top: 16px;
 	}
   @media ${device.mobile} {
-		font-size: 12px;
+		font-size: 16px;
     margin-top: 16px;
+    width: 80%;
 	}
 `
 
@@ -37,7 +38,7 @@ color: ${Colors.white};
   font-size: 16px;
 	}
   @media ${device.mobile} {
-		font-size: 12px;
+		font-size: 17px;
 	}
 `
 
@@ -54,10 +55,10 @@ export const Header = () => {
 				<Emoji symbol="✨" label="sparkles" />.
 			</HeaderText>
 			<CourseDescription>
-				<div>When you’re used to the carefree life of declaring variables</div>
-        <div>without worrying about what they’ll eventually become</div>
-				<div>or the functions they’ll interact with in their journey,</div>
-        <div>adding types to your code just seems like... </div>
+				When you’re used to the carefree life of declaring variables
+        without worrying about what they’ll eventually become
+				or the functions they’ll interact with in their journey,
+        adding types to your code just seems like...
         <SmallHeaderTextContainer>
           <SmallHeaderText>a bunch of extra work for little reward.</SmallHeaderText>
         </SmallHeaderTextContainer>
