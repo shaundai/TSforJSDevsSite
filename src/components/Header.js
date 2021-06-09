@@ -10,7 +10,12 @@ const HeaderContainer = styled.div`
 	text-align: center;
   justify-content: center;
   align-items: center;
+  padding: 0 50px;
   height: 100vh;
+  @media ${device.tablet} {
+    text-align: left;
+    align-items: flex-start;
+	}
 `
 
 const CourseDescription = styled.div`

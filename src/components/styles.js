@@ -20,10 +20,7 @@ background-clip: text;
 -moz-background-clip: text;
 -moz-text-fill-color: transparent;
 @media ${device.tablet} {
-		font-size: 2.3em;
-	}
-@media ${device.mobile} {
-		font-size: 2.3em;
+		font-size: 2.7em;
 	}
 `
 
