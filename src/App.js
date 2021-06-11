@@ -3,7 +3,7 @@ import { Footer } from "./components/Footer"
 import { Instructor } from "./components/Instructor"
 import { SubscribeForm } from "./components/SubscribeForm"
 import { Header } from "./components/Header"
-import { HeaderText, Container, Content, Title, Line, For, SignUp, InstructorPic, InstructorSection, TaughtBy, ShaundaiNameLink } from "./components/styles"
+import { HeaderText, Container, Content, Title, Line, For, SignUp } from "./components/styles"
 
 const App = () => {
 	return (
