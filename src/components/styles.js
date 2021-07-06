@@ -84,7 +84,7 @@ export const InstructorContainer = styled.div`
 `
 
 export const InstructorPic = styled.img`
-	height: 4em;
+	height: 5em;
 	border-radius: 50%;
 `
 
