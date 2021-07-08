@@ -4,10 +4,13 @@ import { Colors } from '../util/Colors'
 import { Emoji } from '../util/util'
 
 const FooterContainer = styled.div`
-  margin-top: 24px;
+  margin-top: 30vh;
+  width: 100%;
+  text-align: center;
   height: 8vh;
   bottom: 0px;
   color: ${Colors.mainWhite};
+  align-content: bottom;
 `
 
 export const Footer = () => {
