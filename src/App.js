@@ -1,32 +1,17 @@
-import React from "react"
-import { Footer } from "./components/Footer"
-import { Instructor } from "./components/Instructor"
-import { SubscribeForm } from "./components/SubscribeForm"
-import { Header } from "./components/Header"
-import { HeaderText, Container, Content, Title, Line, For, SignUp } from "./components/styles"
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { MainContent } from "./MainContent"
+import { SubscribeSuccessful } from './SubscribeSuccessful';
+
 
 const App = () => {
 	return (
-		<Container>
-			<Content>
-				<Header />
-				<Title>
-					<Line>
-						<HeaderText>TypeScript</HeaderText>
-						<For>for</For>
-						<HeaderText>JavaScript</HeaderText>
-					</Line>
-					<Line>
-						<HeaderText>Developers</HeaderText>
-					</Line>
-          <SignUp>(coming Summer 2021)</SignUp>
-
-				<Instructor />
-        </Title>
-				<SubscribeForm />
-				<Footer />
-			</Content>
-		</Container>
+		<Router>
+		 <Switch>
+			<Route path="/" component={MainContent} exact />
+			<Route path="/signupsuccessful" component={SubscribeSuccessful} />
+		</Switch>
+	</Router>
 	)
 }
 
