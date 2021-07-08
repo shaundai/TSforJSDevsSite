@@ -1,28 +1,41 @@
 import styled from "styled-components"
-import { SignUp } from "./styles"
-
+import { HeaderText, SignUp } from "./styles"
 import { device } from '../util/util'
 
 
 import Form from "react-bootstrap/Form"
-import Button from "react-bootstrap/Button"
 import Container from "react-bootstrap/Container"
-import Col from "react-bootstrap/Col"
+
+const SubscribeFormContainer = styled.div`
+	width: 575px;
+  @media ${device.tablet} {
+  width: 90%;
+	}
+`
 
 const OuterFormContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
   align-items: center;
-  @media ${device.mobile} {
+	width: 450px;
+  @media ${device.tablet} {
   width: 90%;
 	}
 `
 
+const StyledHeaderText = styled(HeaderText)`
+font-size: 48px;
+line-height: 1.2;
+align-self: center;
+
+`
 export const SubscribeForm = () => {
 	return (
+		<SubscribeFormContainer>
+		<div><StyledHeaderText>Subscribe for Updates and Freebies</StyledHeaderText></div>
 		<OuterFormContainer>
-        <SignUp>sign up for updates (no spam. pinky promise.)</SignUp>
+      
 
 			<Container>
 				<script src="https://f.convertkit.com/ckjs/ck.5.js" />
@@ -41,40 +54,47 @@ export const SubscribeForm = () => {
 						<ul data-element="errors" data-group="alert"></ul>
 						<div data-element="fields" data-stacked="false">
 							<div>
-								<Form.Row>
-									<Form.Group as={Col} md={4}>
-										<Form.Control
+									<div class="form-group">
+									<label for="firstName">First Name</label>
+										<input
+										class="form-control form-control-lg"
 											aria-label="First Name"
 											name="fields[first_name]"
 											required
 											placeholder="First Name"
 											type="text"
+											id="firstName"
 										/>
-									</Form.Group>
-									<Form.Group as={Col} md={5}>
-										<Form.Control
+									</div>
+									<div class="form-group">
+									<label for="lastName">Email<span>*</span></label>
+										<input
+										class="form-control form-control-lg"
 											name="email_address"
 											aria-label="Email Address"
 											placeholder="Email Address"
 											required
 											type="email"
+											id="lastName"
 										/>
-									</Form.Group>
-									<Form.Group as={Col} md={2}>
-										<Button
+									</div>
+									<div class="form-group">
+										<button
+										class="btn btn-primary btn-lg"
 											data-element="submit"
 											type="submit"
-											variant="primary"
 										>
 											Subscribe
-										</Button>
-									</Form.Group>
-								</Form.Row>
+										</button>
+									</div>
 							</div>
 						</div>
 					</div>
 				</Form>
 			</Container>
+			<SignUp>(no spam. ever. pinky promise.)</SignUp>
+
 		</OuterFormContainer>
+		</SubscribeFormContainer>
 	)
 }
