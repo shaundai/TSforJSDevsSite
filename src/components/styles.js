@@ -37,7 +37,6 @@ export const Content = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 90%;
 `
 
 export const Title = styled.div`
@@ -46,7 +45,6 @@ export const Title = styled.div`
 	justify-content: center;
 	align-items: center;
 	width: 100vw;
-  height: 100vh;
 `
 
 export const Line = styled.div`
@@ -80,7 +78,7 @@ export const InstructorContainer = styled.div`
   width: 100%;
   justify-content: center;
 	align-items: center;
-  margin: 0 0 16vh;
+  margin: 0 0 13vh ;
 `
 
 export const InstructorPic = styled.img`
@@ -131,4 +129,10 @@ text-align: center;
 @media ${device.mobile} {
   max-width: 61%;
 	}
+`
+
+export const AboutShaundai = styled.div`
+width: 75%;
+text-align: justify;
+margin-bottom: 100px;
 `

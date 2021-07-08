@@ -7,6 +7,7 @@ import Form from "react-bootstrap/Form"
 import Container from "react-bootstrap/Container"
 
 const SubscribeFormContainer = styled.div`
+margin-top: 150px;
 	width: 575px;
   @media ${device.tablet} {
   width: 90%;

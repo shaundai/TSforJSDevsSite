@@ -1,17 +1,39 @@
 import React from "react"
+import styled from "styled-components"
 import { Footer } from "./components/Footer"
 import { Instructor } from "./components/Instructor"
 import { SubscribeForm } from "./components/SubscribeForm"
 import { Header } from "./components/Header"
-import { HeaderText, Container, Content, Title, Line, For, SignUp } from "./components/styles"
+import {
+	HeaderText,
+	Container,
+	Content,
+	Title,
+	Line,
+	For,
+	SignUp,
+} from "./components/styles"
+
+const FooterContainer = styled.div`
+	margin-top: 50px;
+	width: 100%;
+	background-color: #101010;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+`
+
+const Filler = styled.div`
+	height: 25vh;
+`
 
 export const MainContent = () => {
 	return (
 		<Container>
 			<Content>
 				<Header />
+				<Filler />
 				<Title>
-					<Line>introducing</Line>
 					<Line>
 						<HeaderText>TypeScript</HeaderText>
 						<For>for</For>
@@ -20,12 +42,14 @@ export const MainContent = () => {
 					<Line>
 						<HeaderText>Developers</HeaderText>
 					</Line>
-          <SignUp>(coming Summer 2021)</SignUp>
+					<SignUp>(coming Summer 2021)</SignUp>
 
-				<Instructor />
-        </Title>
-				<SubscribeForm />
-				<Footer />
+					<Instructor />
+				</Title>
+				<FooterContainer>
+					<SubscribeForm />
+					<Footer />
+				</FooterContainer>
 			</Content>
 		</Container>
 	)
