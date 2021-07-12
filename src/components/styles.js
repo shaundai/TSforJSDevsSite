@@ -136,3 +136,12 @@ width: 75%;
 text-align: justify;
 margin-bottom: 100px;
 `
+
+export const FooterContainer = styled.div`
+	margin-top: 50px;
+	width: 100%;
+	background-color: ${Colors.offBlack};
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+`

@@ -4,6 +4,7 @@ import { Footer } from "./components/Footer"
 import { Instructor } from "./components/Instructor"
 import { SubscribeForm } from "./components/SubscribeForm"
 import { Header } from "./components/Header"
+import { AboutThisCourse } from "./components/AboutThisCourse"
 import {
 	HeaderText,
 	Container,
@@ -12,21 +13,12 @@ import {
 	Line,
 	For,
 	SignUp,
+	FooterContainer
 } from "./components/styles"
-
-const FooterContainer = styled.div`
-	margin-top: 50px;
-	width: 100%;
-	background-color: #101010;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-`
 
 const Filler = styled.div`
 	height: 25vh;
 `
-
 export const MainContent = () => {
 	return (
 		<Container>
@@ -46,6 +38,7 @@ export const MainContent = () => {
 
 					<Instructor />
 				</Title>
+				<AboutThisCourse/>
 				<FooterContainer>
 					<SubscribeForm />
 					<Footer />
