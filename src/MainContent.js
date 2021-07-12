@@ -13,7 +13,7 @@ import {
 	Line,
 	For,
 	SignUp,
-	FooterContainer
+	FooterContainer,
 } from "./components/styles"
 
 const Filler = styled.div`
@@ -38,7 +38,7 @@ export const MainContent = () => {
 
 					<Instructor />
 				</Title>
-				<AboutThisCourse/>
+				<AboutThisCourse />
 				<FooterContainer>
 					<SubscribeForm />
 					<Footer />

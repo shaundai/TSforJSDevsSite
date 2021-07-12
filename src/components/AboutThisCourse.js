@@ -6,9 +6,9 @@ const lineHeight = "40px"
 
 const CourseModulesTitle = styled.header`
 font-weight: bold;
-font-size: 24px;
+font-size: 28px;
 color: ${Colors.mainPurpleBright};
-margin-bottom: 12px;
+margin-bottom: 20px;
 `
 
 const GridContainer = styled.div`
@@ -18,6 +18,7 @@ const GridContainer = styled.div`
   background-color: ${Colors.offBlack};
   border-radius: 8px;
   padding: 20px 0px;
+  margin-bottom: 100px;
 `
 
 const MainColumn = styled.div`
