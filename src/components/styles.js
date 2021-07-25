@@ -123,7 +123,7 @@ position: relative;
 `
 
 export const SignUp = styled.div`
-color: ${Colors.mainPurpleBright};
+color: ${Colors.mainWhite};
 width: 100%;
 text-align: center;
 @media ${device.mobile} {

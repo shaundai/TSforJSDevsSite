@@ -16,10 +16,6 @@ const OuterFormContainer = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 450px;
-	@media ${device.tablet} {
-		width: 90%;
-	}
 `
 
 const InputContainer = styled.div`
@@ -58,6 +54,7 @@ const Input = styled.input`
 `
 
 const StyledHeaderText = styled(HeaderText)`
+display: flex;
 	font-size: 48px;
 	line-height: 1.2;
 	align-self: center;
