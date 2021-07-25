@@ -1,9 +1,7 @@
 import styled from "styled-components"
 import { HeaderText, SignUp } from "./styles"
+import { Colors } from "../util/Colors"
 import { device } from "../util/util"
-
-import Form from "react-bootstrap/Form"
-import Container from "react-bootstrap/Container"
 
 const SubscribeFormContainer = styled.div`
 	margin-top: 140px;
@@ -23,12 +21,62 @@ const OuterFormContainer = styled.div`
 		width: 90%;
 	}
 `
+const Input = styled.input`
+width: 100%;
+display: block;
+border-radius: 8px;
+min-height: calc(1.5em + (1rem + 2px));
+padding: 0.5rem 1rem;
+font-size: 1.25rem;
+border-radius: 0.3rem;
+font-weight: 400;
+line-height: 1.5;
+color: #212529;
+background-color: #fff;
+background-clip: padding-box;
+border: 1px solid #ced4da;
+
+&:focus,
+&:active {
+  box-shadow: 0 0 0 0.25rem rgb(224 108 117 / 25%);
+	color: #212529;
+    background-color: #fff;
+    border-color: #f0b6ba;
+    outline: 0;
+}
+`
 
 const StyledHeaderText = styled(HeaderText)`
 	font-size: 48px;
 	line-height: 1.2;
 	align-self: center;
 `
+
+const SubmitButton = styled.button`
+border-radius: 8px;
+color: white;
+background-color: blue;
+padding: 12px 20px;
+border: 0;
+background-color: ${Colors.mainPurpleDark};
+  background-image: ${Colors.mainPurpleDark};
+  background-image: -moz-linear-gradient(top, ${Colors.mainPurpleBright} 0%, ${Colors.mainPurpleDark} 100%); 
+  background-image: -webkit-linear-gradient(top, ${Colors.mainPurpleBright} 0%, ${Colors.mainPurpleDark} 100%); 
+  background-image: linear-gradient(to bottom, ${Colors.mainPurpleBright} 0%, ${Colors.mainPurpleDark} 100%); 
+  background-size: 300px;
+  background-repeat: no-repeat;
+transition: transform .5s;
+&:hover,
+&:active {
+  transform: scale(1.1);
+}
+`
+
+const Star = styled.span`
+color: ${Colors.softOrange};
+margin-left: 2px;
+`
+
 export const SubscribeForm = () => {
 	return (
 		<SubscribeFormContainer>
@@ -36,9 +84,8 @@ export const SubscribeForm = () => {
 				<StyledHeaderText>Subscribe for Updates and Freebies</StyledHeaderText>
 			</div>
 			<OuterFormContainer>
-				<Container>
 					<script src="https://f.convertkit.com/ckjs/ck.5.js" />
-					<Form
+					<form
 						action="https://app.convertkit.com/forms/2282243/subscriptions"
 						class="seva-form formkit-form"
 						method="post"
@@ -55,9 +102,8 @@ export const SubscribeForm = () => {
 								<div>
 									<div class="form-group">
 										<label for="firstName">First Name</label>
-										<input
-											class="form-control form-control-lg"
-											aria-label="First Name"
+										<Input
+											aria-label="Input first name"
 											name="fields[first_name]"
 											required
 											placeholder="First Name"
@@ -67,12 +113,11 @@ export const SubscribeForm = () => {
 									</div>
 									<div class="form-group">
 										<label for="lastName">
-											Email<span>*</span>
+											Email<Star>*</Star>
 										</label>
-										<input
-											class="form-control form-control-lg"
+										<Input
 											name="email_address"
-											aria-label="Email Address"
+											aria-label="Input email address"
 											placeholder="Email Address"
 											required
 											type="email"
@@ -80,19 +125,18 @@ export const SubscribeForm = () => {
 										/>
 									</div>
 									<div class="form-group">
-										<button
-											class="btn btn-primary btn-lg"
+										<SubmitButton
 											data-element="submit"
 											type="submit"
+											aria-label="submit button"
 										>
 											Subscribe
-										</button>
+										</SubmitButton>
 									</div>
 								</div>
 							</div>
 						</div>
-					</Form>
-				</Container>
+					</form>
 				<SignUp>(no spam. ever. pinky promise.)</SignUp>
 			</OuterFormContainer>
 		</SubscribeFormContainer>
