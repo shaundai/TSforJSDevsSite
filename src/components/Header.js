@@ -5,7 +5,7 @@ import { Colors } from "../util/Colors"
 import { Emoji, device } from "../util/util"
 import ChevronDown from "../images/chevrondown.png"
 
-const HeaderContainer = styled.div`
+const HeaderContainer = styled.header`
 	display: flex;
 	flex-direction: column;
 	text-align: center;
@@ -19,7 +19,7 @@ const HeaderContainer = styled.div`
 	}
 `
 
-const CourseDescription = styled.div`
+const CourseDescription = styled.section`
 	font-size: 2.2vw;
 	font-weight: 600;
 	width: 87%;
@@ -35,7 +35,7 @@ const CourseDescription = styled.div`
 	}
 `
 
-const SmallHeaderText = styled.span`
+const SmallHeaderText = styled.header`
 	font-size: 2.3vw;
 	font-family: "Montserrat", sans-serif;
 	font-weight: bold;
@@ -64,7 +64,7 @@ const ChevronIcon = styled.img`
 	}
 `
 
-const SmallHeaderTextContainer = styled.div`
+const SmallHeaderTextContainer = styled.header`
 	margin-top: 20px;
 `
 

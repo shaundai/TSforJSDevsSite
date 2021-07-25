@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Colors } from '../util/Colors'
 import { Emoji } from '../util/util'
 
-const FooterContainer = styled.div`
+const FooterContainer = styled.footer`
   margin-top: 30vh;
   width: 100%;
   text-align: center;

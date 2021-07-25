@@ -39,7 +39,7 @@ export const Content = styled.div`
 	align-items: center;
 `
 
-export const Title = styled.div`
+export const Title = styled.header`
 	display: flex;
   flex-direction: column;
 	justify-content: center;
