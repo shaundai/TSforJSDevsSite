@@ -1,13 +1,13 @@
 import React from "react"
 
-import Shaundai from "../images/shaundaipic.png"
+import Shaundai from "../../images/shaundaipic.png"
 import {
 	InstructorPic,
 	InstructorContainer,
 	TaughtBy,
 	ShaundaiNameLink,
 	AboutShaundai,
-} from "./styles"
+} from "../styles"
 
 
 

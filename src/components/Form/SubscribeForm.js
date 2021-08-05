@@ -1,7 +1,7 @@
 import styled from "styled-components"
-import { HeaderText, SignUp } from "./styles"
-import { Colors } from "../util/Colors"
-import { device } from "../util/util"
+import { HeaderText, SignUp } from "../styles"
+import { Colors } from "../../util/Colors"
+import { device } from "../../util/util"
 
 const SubscribeFormContainer = styled.div`
 	margin-top: 140px;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { MainContent } from "./MainContent"
-import { SubscribeSuccessful } from './SubscribeSuccessful';
+import { MainContent } from "./components/MainContent/MainContent"
+import { SubscribeSuccessful } from './components/Form/SubscribeSuccessful';
 
 
 const App = () => {

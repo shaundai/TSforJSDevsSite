@@ -1,8 +1,8 @@
 import styled from "styled-components"
-import { Colors } from "./util/Colors"
+import { Colors } from "../../util/Colors"
 import { Link } from "react-router-dom"
-import { HeaderText, Container, Content } from "./components/styles"
-import { Emoji } from "./util/util"
+import { HeaderText, Container, Content } from "../styles"
+import { Emoji } from "../../util/util"
 
 const SuccessPage = styled(Content)`
 	height: 100vh;

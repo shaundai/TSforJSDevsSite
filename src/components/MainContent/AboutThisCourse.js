@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { Colors } from "../util/Colors"
+import { Colors } from "../../util/Colors"
 
 const lineHeight = "40px"
 
@@ -40,6 +40,7 @@ const ColNumber = styled.div`
 const Col = styled.div`
 	line-height: ${lineHeight};
   height: 40px;
+  flex-wrap: wrap;
 `
 export const AboutThisCourse = () => {
 	return (

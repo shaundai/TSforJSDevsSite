@@ -1,10 +1,10 @@
 import React from "react"
 import styled from "styled-components"
-import { Footer } from "./components/Footer"
-import { Instructor } from "./components/Instructor"
-import { SubscribeForm } from "./components/SubscribeForm"
-import { Header } from "./components/Header"
-import { AboutThisCourse } from "./components/AboutThisCourse"
+import { Footer } from "../Footer"
+import { Instructor } from "./Instructor"
+import { SubscribeForm } from "../Form/SubscribeForm"
+import { Header } from "../Header"
+import { AboutThisCourse } from "./AboutThisCourse"
 import {
 	HeaderText,
 	Container,
@@ -14,7 +14,7 @@ import {
 	For,
 	SignUp,
 	FooterContainer,
-} from "./components/styles"
+} from "../styles"
 
 const Filler = styled.div`
 	height: 25vh;
