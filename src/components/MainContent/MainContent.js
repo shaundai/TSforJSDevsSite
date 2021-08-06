@@ -34,7 +34,7 @@ export const MainContent = () => {
 					<Line>
 						<HeaderText>Developers</HeaderText>
 					</Line>
-					<SignUp>(coming Summer 2021)</SignUp>
+					<SignUp>(coming Fall 2021)</SignUp>
 
 					<Instructor />
 				</Title>
