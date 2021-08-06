@@ -97,6 +97,7 @@ font-weight: bold;
 display: block;
 font-size: 20px;
 position: relative;
+color: white;
 
 &:hover {
   text-decoration: none;
