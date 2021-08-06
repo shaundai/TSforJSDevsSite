@@ -57,10 +57,10 @@ const ChevronButton = styled.button`
 
 const ChevronIcon = styled.img`
 	height: 20px;
-	width: 48px;
+	width: 40px;
 	@media ${device.tablet} {
 		height: 15px;
-	  width: 38px;
+	  width: 30px;
 	}
 `
 
