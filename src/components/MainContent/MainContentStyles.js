@@ -28,6 +28,7 @@ export const MainColumn = styled.div`
 export const Row = styled.div`
 	display: flex;
 	justify-content: space-between;
+  width: 400px;
 `
 export const ColNumber = styled.div`
 	color: ${Colors.mainPurpleBright};
@@ -45,13 +46,23 @@ export const Col = styled.div`
 
 export const NumberContainer = styled.span`
 display: flex;
+align-items: center;
+height: 100%;
 `
 
 export const Chevron = styled.img`
-	height: 14px;
-	width: 14px;
+	height: 8px;
+	width: 12px;
 `
 
-export const AccordionPanel = styled.section`
+export const ChevronContainer = styled.div`
+	height: 100%;
+	display: flex;
+  align-items: center;
+`
+
+export const AccordionPanel = styled.ul`
 	padding-left: 28px;
+  width: 400px;
+
 `
