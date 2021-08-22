@@ -53,6 +53,7 @@ height: 100%;
 export const Chevron = styled.img`
 	height: 8px;
 	width: 12px;
+  cursor: pointer;
 `
 
 export const ChevronContainer = styled.div`
