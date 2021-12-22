@@ -31,7 +31,7 @@ export const Instructor = () => {
 					legacy codebase to TypeScript. In this course she compiles her learnings
 					about getting started with TypeScript (while helping you avoid making the
 					mistakes she made!). Shaundai is a frontend developer, technical writer,
-					and co-organizer of React Ladies.
+					and co-organizer of <a href="https://www.reactrobins.com/">React Robins</a>.
 					</AboutShaundai>
 					</>
 	)

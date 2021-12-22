@@ -20,6 +20,7 @@ const GridContainer = styled.div`
 	background-color: ${Colors.offBlack};
 	border-radius: 8px;
 	padding: 20px 0px;
+	overflow: hidden;
 	margin-bottom: 100px;
 	@media ${device.tablet} {
 		flex-direction: column;

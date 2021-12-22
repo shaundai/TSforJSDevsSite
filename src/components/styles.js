@@ -31,6 +31,7 @@ export const Container = styled.div`
 	width: 100%;
 	color: ${Colors.mainWhite};
 	font-family: "Montserrat", sans-serif;
+	overflow: hidden;
 `
 export const Content = styled.div`
 	display: flex;

@@ -24,7 +24,7 @@ const InputContainer = styled.div`
 	justify-content: center;
 	width: 450px;
 	@media ${device.tablet} {
-		width: 400px;
+		width: 90%;
 	}
 `
 const Input = styled.input`
